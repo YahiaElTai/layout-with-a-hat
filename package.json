@@ -12,6 +12,14 @@
     "test-watch": "mocha --watch",
     "watch": "npm run build-watch & npm run test-watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YahiaElTai/layout-with-a-hat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YahiaElTai/layout-with-a-hat/issues"
+  },
+  "homepage": "https://github.com/YahiaElTai/layout-with-a-hat#readme",
   "keywords": [
     "react-helmet",
     "higher order component",

@@ -96,8 +96,6 @@ export default LayoutWithAHat(helmetConfig)({
 });
 ```
 
-### Reference
-
 ### Important Notes
 
 1. everything in `layout-with-a-hat` is optional.
