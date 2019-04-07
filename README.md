@@ -109,3 +109,8 @@ export default LayoutWithAHat(helmetConfig)({
 5. quick reminder for twitter
    - Twitter Title Max Length = `70`;
    - Twitter Desc Max Length = `200`;
+   
+
+## License
+
+MIT
