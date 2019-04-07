@@ -1,0 +1,42 @@
+{
+  "name": "layout-with-a-hat",
+  "version": "0.0.1",
+  "description": "A higher order component to add different layouts to different pages in your application and also include react-helmet that automatically fills og / twitter meta tags to every single page",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "build-watch": "babel src --watch --out-dir lib",
+    "clear": "rm -rf ./lib",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "test-watch": "mocha --watch",
+    "watch": "npm run build-watch & npm run test-watch"
+  },
+  "keywords": [
+    "react-helmet",
+    "higher order component",
+    "layout wrapper",
+    "react helmet layout wrapper",
+    "meta",
+    "higher",
+    "layout",
+    "react layout",
+    "og",
+    "open graph",
+    "twitter"
+  ],
+  "author": "Yahia El Tai",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "react": "^16.8.6"
+  }
+}
