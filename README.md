@@ -2,9 +2,9 @@
 
 A higher order component to add different layouts to your pages and automatically fills meta tags including og / twitter meta tags to every single page with react-helmet.
 
-The first call you would pass your react-helmet meta tags.
-The second call you would pass your Layout component and its needed props if any.
-The third call you would pass your wrapped component and its needed props if any. the wrapped component is the content of the page excluding the layout.
+* The first call you would pass your react-helmet meta tags.
+* The second call you would pass your Layout component and its needed props if any.
+* The third call you would pass your wrapped component and its needed props if any. the wrapped component is the content of the page excluding the layout.
 
 ### Install
 
