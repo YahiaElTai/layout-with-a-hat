@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { WrappedComponent } from '../../src/components';
+import { WrappedComponent } from '../../lib/components';
 
 it('renders the wrapped component with its correct props', () => {
   const Component = ({ name, className }) => (

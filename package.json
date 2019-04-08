@@ -1,12 +1,30 @@
 {
   "name": "layout-with-a-hat",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A higher order component to add different layouts to your pages and automatically fills meta tags including og / twitter meta tags to every single page with react-helmet.",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "rm -rf dist && SET \"NODE_ENV=production\"=production && babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YahiaElTai/layout-with-a-hat.git"
@@ -32,17 +50,18 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^24.7.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
-    "jest": "^24.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^2.1.8",
     "react-test-renderer": "^16.8.6"
   }
 }

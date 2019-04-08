@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { LayoutComponent } from '../../src/components';
+import { LayoutComponent } from '../../lib/components';
 
 it('renders the layout component with its correct props', () => {
   const Component = ({ className, children }) => (

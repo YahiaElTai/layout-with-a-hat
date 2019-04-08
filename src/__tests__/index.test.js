@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import helmetPropsFunc from '../src/helmetProps';
-import { WrappedComponent, LayoutComponent } from '../src/components';
-import LayoutWithAHat from '../src';
+import helmetPropsFunc from '../lib/helmetProps';
+import { WrappedComponent, LayoutComponent } from '../lib/components';
+import LayoutWithAHat from '../lib';
 
 const helmetToUse = {
   base: 'http://example.com',
