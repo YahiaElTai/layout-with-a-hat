@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,7 +7,11 @@ const InternalWrappedComponent = ({
   wrappedComponentProps,
 }) => <WrappedComponent {...wrappedComponentProps} />;
 
-const DefaultComponent = () => <div />;
+const DefaultComponent = () => (
+  <div>
+    <p>This is the wrapped component</p>
+  </div>
+);
 
 InternalWrappedComponent.propTypes = {
   WrappedComponent: PropTypes.func,

@@ -1,11 +1,9 @@
 const findIndex = (arr, fn) => {
-  // eslint-disable-next-line consistent-return
-  arr.forEach((value, index) => {
-    if (fn(arr[index])) {
-      return index;
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i])) {
+      return i;
     }
-  });
-
+  }
   return -1;
 };
 

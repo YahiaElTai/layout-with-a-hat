@@ -2,8 +2,7 @@
   "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["react", "jsx-a11y", "import", "prettier"],
   "env": {
-    "browser": true,
-    "node": true
+    "browser": true
   },
   "rules": {
     "react/jsx-filename-extension": 0,

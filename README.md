@@ -102,10 +102,16 @@ export default LayoutWithAHat(helmetConfig)({
 
 2. If you would like to use different layouts for your pages and not use `layout-with-a-hat` for your react-helmet needs, you can do that by not providing anything in the first call. same goes for the other 2 calls, if you would like to use only react-helmet side of `layout-with-a-hat`, you can do that by not providing anything in the second and third calls.
 
-3. if you provide `title` prop to the first call, it will be used as default title for the open graph protocol and twitter title meta tags unless you provide them separately. same goes for `description`, `image` and `url` props.
+3. if you provide `title` prop to the first call, it will be used as default title for the open graph protocol and twitter title meta tags unless you provide them separately (eg: `og: {title: 'og specific title'}`) .same goes for `description`, `image` and `url` props.
 
 4. if `application-name` meta tag is not provided the `sitename` will be used if the latter is provided.
 
-5. quick reminder for twitter
+5. if `canonical` link tag is not provided the `url` will be used if the latter is provided.
+
+6. quick reminder for twitter
    - Twitter Title Max Length = `70`;
    - Twitter Desc Max Length = `200`;
+
+### LICENSE
+
+MIT

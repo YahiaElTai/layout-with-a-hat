@@ -55,7 +55,6 @@ export default ({
   }
 
   // default title
-  // eslint-disable-next-line no-param-reassign
   defaultTitle = defaultTitle || siteName;
 
   // favicon
@@ -97,6 +96,18 @@ export default ({
     (content, prop) =>
       content != null && meta.push({ property: `twitter:${prop}`, content }),
   );
+
+  // property
+  if (property) {
+    forEach(property, (props, namespace) =>
+      forEach(
+        props,
+        (content, prop) =>
+          content != null &&
+          meta.push({ property: `${namespace}:${prop}`, content }),
+      ),
+    );
+  }
 
   return {
     ...rest,
