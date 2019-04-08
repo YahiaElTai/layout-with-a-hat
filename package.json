@@ -1,6 +1,6 @@
 {
   "name": "layout-with-a-hat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A higher order component to add different layouts to your pages and automatically fills meta tags including og / twitter meta tags to every single page with react-helmet.",
   "main": "src/index.js",
   "scripts": {
