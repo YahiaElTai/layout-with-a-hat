@@ -1,5 +1,7 @@
 # layout-with-a-hat
 
+[![Build Status](https://travis-ci.org/YahiaElTai/layout-with-a-hat.svg?branch=master)](https://travis-ci.org/YahiaElTai/layout-with-a-hat) [![dependencies Status](https://david-dm.org/YahiaElTai/layout-with-a-hat/status.svg)](https://david-dm.org/YahiaElTai/layout-with-a-hat) [![devDependencies Status](https://david-dm.org/YahiaElTai/layout-with-a-hat/dev-status.svg)](https://david-dm.org/YahiaElTai/layout-with-a-hat?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 A higher order component to add different layouts to your pages and automatically fills meta tags including og / twitter meta tags to every single page with react-helmet.
 
 - The first call you would pass your react-helmet meta tags.
