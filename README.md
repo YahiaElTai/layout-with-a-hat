@@ -66,14 +66,15 @@ const helmetConfig = {
   ],
 };
 
-const WrappedComponent = () => (
+const WrappedComponent = ({ name }) => (
   <div>
     <p>This is the component i want to wrap in Layout.</p>
+    <p>{name}</p>
   </div>
 );
 
-const LayoutComponent = ({ children }) => (
-  <div>
+const LayoutComponent = ({ className, children }) => (
+  <div className={className}>
     <p>This is the Layout that i want my component to be wrapped in.</p>
     <header>
       <nav />
@@ -91,10 +92,10 @@ const LayoutComponent = ({ children }) => (
 
 export default LayoutWithAHat(helmetConfig)({
   LayoutComponent,
-  layoutComponentProps: { prop: 'value' ...}
+  layoutComponentProps: { className: 'sidebar' ...}
 })({
   WrappedComponent,
-  wrappedComponentProps: { prop: 'value' ...}
+  wrappedComponentProps: { name: 'Superman' ...}
 });
 ```
 
